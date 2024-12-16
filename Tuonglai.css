@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Styles Page</title>
+    <!-- You can either link your CSS properties from separate .css file, or embed the CSS within a <style> tag. -->
+    <link rel="stylesheet" href="/main.css" />
+
+    <!-- with the style tag we can embed CSS elements for this specific page only and will override the linked elements. -->
+    <style>
+            /*This is a custom ID that we can call once in our html file. Good for when pages link directly to this id. You can have many or zero custom ids, not required. */
+                  #main-header {
+                    text-align: left;
+                    background-image: url(
+            "https://cdn.glitch.com/68827d3e-9fab-4bc3-b0af-542bc80d8b3f%2Fmani%20doge.jpg?v=1614826522061");
+                    background-color: #99ccff;
+                    padding: 10px;
+                    color: #000000;
+                  }
+      /*This is an custom CLass. Classes can be called multiple times and are good if you have certain sections to be called. */
+                  .tutorial-text {
+                    background-color:grey;
+                    color: #fff;
+                    padding: 5px;
+                    border: 1px solid #fff;
+                  }
+
+                  body, html {
+                    background-color: #787878;
+                  }
+
+                  img {
+                    width:300px;
+                    margin-left: auto;
+                    margin-right: auto;
+                  }
+
+                  header {
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>CSS Styles in HTML Cheat Sheet</h1>
+    </header>
+
+    <a href="index.html">HOME</a>
+    <br />
+ 
+    <div style="max-width: 50%; margin:auto;">
+      <p class="tutorial-text">
+        This page is 'stylized' by using several fundamental CSS (Cascading
+        Style Sheets) tags. CSS can affect the look of text, the size of images,
+        the position of content, and more! It is challenging to go over all CSS
+        in one class, let along one assignment, so you'll want to reference CSS
+        from
+        <a href="https://www.w3schools.com/" target=" ">w3 schools </a> to help
+        you out as well.
+      </p>
+
+      <p>
+        First we have normal text. There is no CSS impacting this text beside
+        the background color of the page itself. You can use some CSS, the
+        'text-align' property to align text.
+      </p>
+
+      <p style=" text-align:center">
+        Aligned Centered
+      </p>
+
+      <p style=" text-align:right">
+        Aligned Right
+      </p>
+
+      <p style=" text-align:jusitfy">
+        This is text that is justified. CSS can be used within the tag itself,
+        as seen with this < p >.
+      </p>
+
+      <img
+        src="https://cdn.glitch.com/68827d3e-9fab-4bc3-b0af-542bc80d8b3f%2Fdoge.jpg?v=1614819359069"
+      />
+
+      <p class="tutorial-text">
+        By adding a style attribute, we can then begin to add style to the text.
+        Try adding style="color:red;" in between the brackets of the < p > tag.
+        Just the first one! Not the closing tag. Add a < br > break tag after a
+        word to create a forced text break!
+      </p>
+
+      <p style="color:red;">This is red text<br />with a break</p>
+
+      <p class="tutorial-text">
+        Try a different color! Type in a name of a color HTML/CSS both come with
+        various build in color names, blue, red, black, white, etc. More can be
+        found at w3 schools.
+      </p>
+
+      <p style="color:blue">
+        I am blue text.
+      </p>
+
+      <p class="tutorial-text">
+        You can also use hex color codes to pick your color!
+      </p>
+
+      <p style="color:#ff9933">
+        I am orange text set by hex value
+        <a href="https://www.w3schools.com/colors/colors_picker.asp" target=" "
+          >link for html color picker</a
+        >
+      </p>
+
+      <p class="tutorial-text">
+        The image below has a style element of '100px' width.
+      </p>
+
+      <img
+        style="width:100px"
+        src="https://cdn.glitch.com/68827d3e-9fab-4bc3-b0af-542bc80d8b3f%2Fcool%20doge.jpg?v=1614822078043"
+      />
+      <br />
+
+      <p class="tutorial-text">
+        This image has a width css element, but its called in the < style > tag
+        at the top of the html file.
+      </p>
+
+      <img
+        src="https://cdn.glitch.com/68827d3e-9fab-4bc3-b0af-542bc80d8b3f%2Fcheems.jpg?v=1614822076751"
+      />
+
+      <p class="tutorial-text">
+        Here we added a style="background-color:rgba(r,g,b,a)" as a another
+        technique to add color. This time more of a highlighted effect. The
+        values will need to be numbers for r,g,b, and a. a = alpha, and goes up
+        to 1.0 - 0.0.
+      </p>
+
+      <p style="background-color:rgba(255, 99, 71, 0.4)">
+        This text has an red box background but is slightly transparent.
+      </p>
+
+      <p class="tutorial-text">
+        You can also change the size of the text in various ways, pixel value or
+        percentage.<br />
+        There are various ways to change text. You can see in the code, without
+        using a CSS page things get a little busy!
+      </p>
+
+      <p style="font-size:50px;">
+        This text size is changed by value (pixels)
+      </p>
+      <p style="font-size:75%;">
+        This font size is changed by percent
+      </p>
+      <p style="font-family:courier;">
+        I am text with a courier font
+      </p>
+      <p style="text-align: center;">
+        I am text that is centered
+      </p>
+      <p style="border: 2px solid Violet;">
+        I am text has a violet border
+      </p>
+
+      <h2>This style is edited in the head tag</h2>
+    </div>
+
+    <!-- Try different text styles. 
+		margin: Xpx;
+		padding: Xpx;
+
+	--></body>
+</html>
